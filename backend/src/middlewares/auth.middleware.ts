@@ -18,6 +18,6 @@ export const authMiddleware = async (
   const user = await userRepo.findById(decoded.id);
   if (!user) throw new ApiError(401, 'Unauthorized');
 
-  req.user = { id: user._id.toString(), role: user.role };
+  req.user = { id: user._id.toString() };
   next();
 };

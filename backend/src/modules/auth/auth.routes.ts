@@ -17,9 +17,6 @@ const router = Router();
  *           type: string
  *         email:
  *           type: string
- *         role:
- *           type: string
- *           enum: [user, admin]
  *     RegisterRequest:
  *       type: object
  *       required:
